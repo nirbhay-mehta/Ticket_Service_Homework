@@ -1,17 +1,26 @@
 #Overview and Output File
 There are no external library used in the Stadium application. So, if you want to directly import in NetBeans, intelliJ or Eclipse IDE feel free to do. Note all the tests were performed and were checked manually.
 Entry_point.java is the file that has main method in it. Other supporting Java files include Level, Rows, SeatHold, SeatStatuS, Venue and Ticket Service (Interface).
+
+
 There are 3 questions that need to be implemented for this application.
 1)	To find total no of Seats available and find total seats available in the Stadium as well
 2)	Find and hold the best available seats for a customer
 3)	Reserve and commit the held seats
+
+
+
 For implementing the above question a switch case is being created where a user is expected to press 1, 2 or 3. Kindly look below to get an idea of it.
 Select from the below use case:
 Press 1 --> To find the no of available seats
 Press 2 --> To hold the best available seat for yourself!
 Press 3 --> To reserve the seats - Only if you have hold the seats
+
+
 Scenario 1: 
 Customer can check the available seats per level or entire available seats in the stadium can be checked.
+
+
 Select the level number where you want the seats
 Press 1 --> Orchestra -->100$ --> Minimum Level
 Press 2 --> Main --> 75$
@@ -22,12 +31,17 @@ Then customer can select any level which intends to. Here the user can also find
 5
 Total seats available: 6250
 
+
+
 Scenario2:
 Customer can find the best available seats and can hold the seat(s) for 120 seconds i.e. 2Minutes. (Press 2 to try it!)
 Assumption – Best available seats would be nearest to the stage.
 Here initially customer will be asked which level the tickets need to be booked. Say for example 1
 After receiving the input user will be asked the number of tickets which needs to be booked (Say for example 4 tickets has to be booked) and also their email address. 
 Once the ticket is booked. Total number of seats that were available are shown and a message with seat no that was kept for hold (unique no) and a message “Tickets hold” will be displayed.
+
+
+
 Press 1 --> To find the no of available seats
 Press 2 --> To hold the best available seat for yourself!
 Press 3 --> To reserve the seats - Only if you have hold the seats
@@ -120,6 +134,9 @@ Currently seats available: 1250
 Scenario 3
 Customer can reserve the held seats
 Here, once the customer has held the seats it can reserve the seats. So here in the below example customer will be holding 10tickets and once he holds it customer will reserve the seats and later as we can see from the reserved seats 10 seats are being subtracted.
+
+
+
 Select from the below use case:
 Press 1 --> To find the no of available seats
 Press 2 --> To hold the best available seat for yourself!
