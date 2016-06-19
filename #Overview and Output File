@@ -1,0 +1,169 @@
+#Overview and Output File
+There are no external library used in the Stadium application. So, if you want to directly import in NetBeans, intelliJ or Eclipse IDE feel free to do. Note all the tests were performed and were checked manually.
+Entry_point.java is the file that has main method in it. Other supporting Java files include Level, Rows, SeatHold, SeatStatuS, Venue and Ticket Service (Interface).
+There are 3 questions that need to be implemented for this application.
+1)	To find total no of Seats available and find total seats available in the Stadium as well
+2)	Find and hold the best available seats for a customer
+3)	Reserve and commit the held seats
+For implementing the above question a switch case is being created where a user is expected to press 1, 2 or 3. Kindly look below to get an idea of it.
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+Scenario 1: 
+Customer can check the available seats per level or entire available seats in the stadium can be checked.
+Select the level number where you want the seats
+Press 1 --> Orchestra -->100$ --> Minimum Level
+Press 2 --> Main --> 75$
+Press 3 --> Balcony1 --> 50$
+Press 4 --> Balacony2 --> 40$ --> Maximum Level
+Press 5 --> To find the total seats available in the stadium
+Then customer can select any level which intends to. Here the user can also find the availability for the entire stadium by pressing an option 5.Say for example if the user presses 5
+5
+Total seats available: 6250
+
+Scenario2:
+Customer can find the best available seats and can hold the seat(s) for 120 seconds i.e. 2Minutes. (Press 2 to try it!)
+Assumption – Best available seats would be nearest to the stage.
+Here initially customer will be asked which level the tickets need to be booked. Say for example 1
+After receiving the input user will be asked the number of tickets which needs to be booked (Say for example 4 tickets has to be booked) and also their email address. 
+Once the ticket is booked. Total number of seats that were available are shown and a message with seat no that was kept for hold (unique no) and a message “Tickets hold” will be displayed.
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+2
+Enter the level which you want to book for
+Press 1 --> Orchestra --> Minimum Level
+Press 2 --> Main
+Press 3 --> Balcony1
+Press 4 --> Balacony2 -->   Maximum Level
+1
+Enter the # of tickets to be booked
+4
+Enter the email
+abc@gmail.com
+Currently seats available: 1250
+Tickets hold
+[1, 2, 3, 4]
+User can go ahead and reserve the seats that were held also by clicking 1 and if not can select 2 or any # (no) for Exit
+And if the user selects 2 one can check the availability to see if the held seats are removed from the total or not. Total seats reserved were 4 so now checking if 4 seats are subtracted from level1 total seats. Held seats will be added back if the seats are not reserved within 120seconds.
+[1, 2, 3, 4]
+Press 1 to RESERVE or any other number to EXIT
+2
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+1
+Select the level number where you want to check the availability
+Press 1 --> Orchestra -->100$ --> Minimum Level
+Press 2 --> Main --> 75$
+Press 3 --> Balcony1 --> 50$
+Press 4 --> Balacony2 --> 40$ --> Maximum Level
+Press 5 --> To find the total seats available in the stadium
+1
+
+Currently seats available: 1246.
+As we can see 4 seats are subtracted from the level 1 total.
+Here if the customer don’t book the seats till 2 minutes (120seconds), tickets will automatically go in available seats. Here the user below is trying to hold 100 seats he gets the seat id and if customer doesn’t reserve it till 2minutes it will go in available state. Note here below the user is trying to hold 100 seats and after 2minutes it will go to available seats(marked in red below) since it is not reserved.
+
+
+
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+2
+Enter the level which you want to book for
+Press 1 --> Orchestra --> Minimum Level
+Press 2 --> Main
+Press 3 --> Balcony1
+Press 4 --> Balacony2 -->   Maximum Level
+1
+Enter the # of tickets to be booked
+100
+Enter the email
+yes@gmail.com
+Currently seats available: 1250
+Tickets hold
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100]
+Press 1 to RESERVE or any other number to EXIT
+2
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+1
+Select the level number where you want to check the availability
+Press 1 --> Orchestra -->100$ --> Minimum Level
+Press 2 --> Main --> 75$
+Press 3 --> Balcony1 --> 50$
+Press 4 --> Balacony2 --> 40$ --> Maximum Level
+Press 5 --> To find the total seats available in the stadium
+1
+Currently seats available: 1150
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+1
+Select the level number where you want to check the availability
+Press 1 --> Orchestra -->100$ --> Minimum Level
+Press 2 --> Main --> 75$
+Press 3 --> Balcony1 --> 50$
+Press 4 --> Balacony2 --> 40$ --> Maximum Level
+Press 5 --> To find the total seats available in the stadium
+1
+Currently seats available: 1250
+
+
+Scenario 3
+Customer can reserve the held seats
+Here, once the customer has held the seats it can reserve the seats. So here in the below example customer will be holding 10tickets and once he holds it customer will reserve the seats and later as we can see from the reserved seats 10 seats are being subtracted.
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+2
+Enter the level which you want to book for
+Press 1 --> Orchestra --> Minimum Level
+Press 2 --> Main
+Press 3 --> Balcony1
+Press 4 --> Balacony2 -->   Maximum Level
+1
+Enter the # of tickets to be booked
+10
+Enter the email
+abc@gmail.com
+Currently seats available: 1250
+Tickets hold
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+Press 1 to RESERVE or any other number to EXIT
+1
+Enter email
+abc@gmail.com
+1 RESERVED
+2 RESERVED
+3 RESERVED
+4 RESERVED
+5 RESERVED
+6 RESERVED
+7 RESERVED
+8 RESERVED
+9 RESERVED
+10 RESERVED
+Select from the below use case:
+Press 1 --> To find the no of available seats
+Press 2 --> To hold the best available seat for yourself!
+Press 3 --> To reserve the seats - Only if you have hold the seats
+1
+Select the level number where you want to check the availability
+Press 1 --> Orchestra -->100$ --> Minimum Level
+Press 2 --> Main --> 75$
+Press 3 --> Balcony1 --> 50$
+Press 4 --> Balacony2 --> 40$ --> Maximum Level
+Press 5 --> To find the total seats available in the stadium
+1
+Currently seats available: 1240
+So from next time when the user plans to hold the tickets id given would be from 11 onwards. 
+
